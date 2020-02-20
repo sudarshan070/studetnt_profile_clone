@@ -1,0 +1,399 @@
+/* --------css reset---------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -------- css--------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ----------common css---------- */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.css-1_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.css-1_container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.5rem;
+  color: #20335c;
+}
+h3 {
+  color: #6f757a;
+  font-size: 1.15rem;
+}
+p {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #20335c;
+}
+.flex {
+  display: flex;
+  justify-content: right;
+}
+/* -------------- header --------------- */
+.css-1_header {
+  padding: 24px 0;
+  background: #f1f1f1;
+}
+.logo {
+  width: 6.5rem;
+}
+.input_search {
+  margin-right: 1rem;
+}
+/* -----------hero secton----------- */
+.css-1_hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ---------content section------- */
+
+.css-1_row {
+  box-shadow: 5px 5px 3px 0px rgba(235, 235, 235, 1);
+  border: 1px solid #bbbaba;
+  text-align: center;
+}
+.img_round img {
+  padding: 1rem 0 1.5rem 0;
+  width: 40%;
+  border-radius: 50%;
+}
+img {
+  width: 100%;
+}
+
+.icon {
+  font-size: 1.25rem;
+  padding: 2rem 1.5rem;
+  color: #20335c;
+}
+.row_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_circle {
+  margin: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: #ccccccfb;
+  border-radius: 50%;
+}
+.right_icon {
+  font-size: 2.5rem;
+  color: rgb(137, 138, 138);
+  padding-bottom: 0.8rem;
+}
+.right_icon:hover {
+  color: #55ba68;
+}
+/* --------footer---------- */
+.card-footer {
+  text-align: center;
+  padding-top: 1.25rem;
+}
+.footer {
+  padding-top: 1.5rem;
+  position: relative;
+}
+.card-footer a {
+  color: #55ba68;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ----------student page--------- */
+
+/* ---------home section---------- */
+.student_section {
+  position: relative;
+}
+.student_home {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  height: 90vh;
+}
+#home {
+  width: 85%;
+}
+
+#home p {
+  padding-top: 1.2rem;
+}
+#home .icon {
+  padding: 1.5rem 0.5rem;
+}
+.right_side_icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right_side_icon a {
+  position: fixed;
+  display: block;
+}
+/* ========about section========== */
+.common_padding_content {
+  padding: 5rem 0;
+}
+.common_padding {
+  padding: 8rem 0;
+  line-height: 1.5;
+}
+.about_col h2 {
+  padding-bottom: 1.5rem;
+}
+.about_col p {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.student_about_flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.student_about_img {
+  width: 2rem;
+  text-align: center;
+}
+/* ==========my skill========== */
+.my_skill_bg {
+  background: #f1f1f1;
+  text-align: center;
+  font-size: 3rem;
+}
+.my_skill_bg p {
+  padding-bottom: 1rem;
+}
+#my_skill p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #20335c;
+}
+/* ==========my project========= */
+.my_project_img {
+  width: 80%;
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.my_project_bg {
+  background: #f8f8f8;
+  text-align: center;
+  position: relative;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.my_project_bg:hover .middle {
+  opacity: 1;
+}
+.my_project_bg:hover .my_project_img {
+  opacity: 0.1;
+}
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* =========fix butttom============= */
+.footer button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: right;
+  background: #f6eadb;
+}
+.btn_fixed a {
+  color: #4caf50;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.btn_fixed a:hover {
+  color: #694b31;
+}
+.btn_fixed {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+}
+.btn1_fixed a {
+  color: #4caf50;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.btn1_fixed a:hover {
+  color: #694b31;
+}
+.btn1_fixed {
+  position: fixed;
+  left: 20px;
+  bottom: 0;
+}
+/* ===========media============== */
+
+@media all and (max-width: 768px) {
+  .flex {
+    display: block;
+  }
+  .input_search {
+    margin-right: 0;
+  }
+  .logo {
+    width: 5rem;
+  }
+}
